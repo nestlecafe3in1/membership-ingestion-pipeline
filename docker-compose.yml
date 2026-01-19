@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  govtech-airflow:
+    image: govtechtechnical:latest
+    build:
+      context: .
+      dockerfile: dockerfile #  Docker Compose will build the image from the dockerfile in the current directory 
+
+    volumes:
+      - ./airflow:/opt/airflow #Volume to mount local directories to Airflow
+      - ./data:/opt/data
+
+    ports:
+      - "8080:8080"
+    command: airflow standalone

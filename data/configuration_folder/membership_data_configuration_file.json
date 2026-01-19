@@ -1,0 +1,35 @@
+{
+  "file_type": ".csv",
+  "column_names": ["name", "email", "date_of_birth", "mobile_no"],
+  "data_validation": {
+    "name": {
+      "data_type": "string",
+      "validate_mandatory": true
+    },
+    "email": {
+      "data_type": "string",
+      "validate_email_domain": {
+        "allowed": [
+          ".com",
+          ".net"
+        ]
+      }
+    },
+    "date_of_birth": {
+      "data_type": "date",
+      "validate_age_over": {
+        "age": 18,
+        "as_of_date": "2022-01-01"
+      }
+    },
+    "mobile_no": {
+      "data_type": "string",
+      "validate_regex": "^[0-9\\s]+$", 
+      "validate_length": {
+        "allow_whitespace": false,
+        "min": 8,
+        "max": 8
+      }
+    }
+  }
+}
