@@ -17,7 +17,7 @@ Before you begin, ensure you have the following installed on your system:
 - Docker Compose: https://docs.docker.com/compose/install/
 ### Build the Docker Image
 
-To build the Docker image for this project, navigate to the directory `section_1` of the project (dockerfile and docker-compose.yml should be present) and run the following command:
+To build the Docker image for this project, navigate to the main directory of the project (dockerfile and docker-compose.yml should be present) and run the following command:
 ```bash
 docker-compose up --build
 ```
@@ -63,7 +63,7 @@ To manually trigger a pipeline run:
 Of course. Here is the directory structure in a copyable markdown format.
 
 ```
-section_1/
+membership-ingestion-pipeline/
 ├── airflow/
 │   ├── dags/
 │   │   ├── membership_pipeline.py
