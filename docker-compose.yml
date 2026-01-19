@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-  govtech-airflow:
-    image: govtechtechnical:latest
+  airflow-scheduler:
+    image: membership-pipeline:latest
     build:
       context: .
       dockerfile: dockerfile #  Docker Compose will build the image from the dockerfile in the current directory 

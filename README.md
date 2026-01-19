@@ -26,7 +26,7 @@ This command will build the Docker image based on the instructions in the docker
 ### Access the Airflow UI
 You can access the Airflow web interface by navigating to http://localhost:8080 in your web browser.
 - Note on Credentials 
-    - The default username and password for the Airflow UI are set up for you. You can find the credentials in the `section_1/airflow/simple_auth_manager_passwords.json`.generated file within the project directory.
+    - The default username and password for the Airflow UI are set up for you. You can find the credentials in the `airflow/simple_auth_manager_passwords.json`.generated file within the project directory.
 
 ### What's mounted
 My Compose file mounts the following paths:
