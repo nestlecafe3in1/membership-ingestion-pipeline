@@ -1,4 +1,4 @@
-# Section 1: Membership Application Processing Pipeline
+# Membership Application Processing Pipeline
 
 ## Introduction
 
